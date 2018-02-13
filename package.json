@@ -1,0 +1,16 @@
+{
+  "name": "metalsmith-i18next-sitemap",
+  "version": "1.0.0",
+  "description": "Builds an appropriate sitemap for sites localized with i18next",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Burke (andy.burke@mailbox.earth)",
+  "license": "MIT",
+  "dependencies": {
+    "extend": "^3.0.1",
+    "minimatch": "^3.0.4",
+    "sitemap": "^1.13.0"
+  }
+}
