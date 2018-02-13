@@ -17,7 +17,8 @@ const sitemap = require( 'metalsmith-i18next-sitemap' );
 
 Metalsmith( __dirname )
     .use( sitemap( {
-        pattern: '**/*.html'               // default file pattern to process for include directives
+        pattern: '**/*.html',               // default file pattern to process for include directives
+        locales: [ 'en', 'es' ]             // an array of locales you are supporting
     } ) )
     .build( error => {
         if ( error ) {
@@ -32,7 +33,8 @@ Metalsmith( __dirname )
 {
   "plugins": {
     "metalsmith-i18next-sitemap": {
-      "pattern": "*.html"
+      "pattern": "**/*.html",
+      "locales": [ "en", "es" ]
     }
   }
 }
